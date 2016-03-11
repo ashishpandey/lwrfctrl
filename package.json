@@ -1,0 +1,17 @@
+{
+    "description": "LWRF controller (experimental)",
+    "repository": "https://github.com/ashishpandey/lwrfctrl",
+    "license": "MIT",
+    "dependencies": {
+        "ag-grid": "3.3.x",
+        "ag-grid-react": "3.3.x"
+    },
+    "devDependencies": {
+        "webpack": "1.12.14",
+        "babel-loader": "x",
+        "babel-core": "x",
+        "babel-preset-es2015": "x",
+        "babel-preset-react": "x",
+        "html-webpack-plugin": "2.10.0"
+    }
+}
