@@ -6,16 +6,18 @@ module.exports = {
 	context: __dirname,
 	entry: "./src/app/index.jsx",
 	output: {
-		path: path.join(__dirname, "src/assets"),
-		publicPath: "src/assets/",
+		path: path.join(__dirname, "dist"),
 		filename: "bundle.js"
 	},
 	resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx'],
+        alias: {
+    		"ag-grid-root" : __dirname + "/node_modules/ag-grid"
+		}
     },
     module: {
 		loaders: [
-		    { test: /\.jsx?$/,   loader: "babel", include: path.join(__dirname, "src/app") },
+		    { test: /\.jsx?$/,   loader: "babel?cacheDirectory", include: path.join(__dirname, "src/app") },
 			{ test: /\.css$/,    loader: "style-loader!css-loader" },
 			{ test: /\.less$/,   loader: "style-loader!css-loader!less-loader" },
 			{ test: /\.png$/,    loader: "url-loader?prefix=img/&limit=5000" },
@@ -30,7 +32,10 @@ module.exports = {
 	amd: { jQuery: true },
 	plugins: [
 		new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 20 }),
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin({
+			title: "lwrfctrl",
+			template: 'src/index.ejs'
+		})
 	],
 	fakeUpdateVersion: 0
 };
