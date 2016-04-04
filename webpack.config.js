@@ -3,6 +3,7 @@ var path = require("path");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+	devtool: "source-map",
 	context: __dirname,
 	entry: "./src/app/index.jsx",
 	output: {
