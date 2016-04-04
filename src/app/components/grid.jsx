@@ -8,6 +8,8 @@ import 'ag-grid-root/dist/styles/theme-fresh.css';
 export default class AppGrid extends React.Component {
   render() {
     return (
+        <div>
+        ok, go
         <AgGridReact 
             columnDefs={[
                 { headerName: "f1", field: "f1" }
@@ -19,9 +21,11 @@ export default class AppGrid extends React.Component {
                 { f1: "row3" },
                 { f1: "row4" },
                 { f1: "row5" },
-                { f1: "row6" }
+                { f1: "row6" },
+                { f1: "row7" }
             ]}
         />
+        </div>
         );
   }
 }

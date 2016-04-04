@@ -3,24 +3,26 @@
     "repository": "https://github.com/ashishpandey/lwrfctrl",
     "license": "MIT",
     "dependencies": {
-        "react": "x",
-        "react-dom": "x",
         "ag-grid": "3.3.x",
         "ag-grid-react": "3.3.x",
-        "express": "x"
+        "express": "x",
+        "pi-gpio": "x",
+        "react": "x",
+        "react-dom": "x"
     },
     "devDependencies": {
-        "webpack": "1.12.14",
-        "babel-loader": "x",
-        "style-loader": "x",
-        "css-loader": "x",
-        "less-loader": "x",
-        "url-loader": "x",
-        "file-loader": "x",
         "babel-core": "x",
+        "babel-loader": "x",
         "babel-preset-es2015": "x",
         "babel-preset-react": "x",
+        "babel-preset-stage-0": "x",
+        "css-loader": "x",
+        "file-loader": "x",
         "html-webpack-plugin": "2.10.0",
-        "babel-preset-stage-0": "x"
+        "less-loader": "x",
+        "style-loader": "x",
+        "url-loader": "x",
+        "webpack": "1.12.14",
+        "webpack-dev-server": "x"
     }
 }
