@@ -1,8 +1,8 @@
 var express = require('express'),
     http = require('http'),
     path = require('path'),
-    sysapi = require('./controllers/system'),
-    lwrf_remote = require('./controllers/lwrf_remote'),
+    sysapi = require('./routes/system'),
+    lwrf_remote = require('./routes/lwrf_remote'),
     app = express();
     
 app.use('/api', sysapi);

@@ -12,11 +12,11 @@ var findLight = function(lightId) {
             notFound();
         }
     }); 
-}
+};
 
 var lightNotFound = function(res) {
     return function() { res.status(404).json({status: 404, message: 'light not found'}); }
-}
+};
 
 router.get('/', function (req, res) {
     findLight(req.params.lightId)
@@ -39,7 +39,7 @@ router.get('/level/:level', function(req, res) {
         },
         lightNotFound(res)
     );
-})
+});
 
 module.exports = router;
   

@@ -10,4 +10,4 @@ const findNibble = symbol => {
         }
     }
     return 0;
-}
+};
