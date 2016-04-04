@@ -16,5 +16,3 @@ const IP   = process.env.IP || 'localhost';
 const PORT = process.env.PORT || 8080;
 console.log('starting app at ' + IP + ':' + PORT);
 http.createServer(app).listen(PORT, IP);
-
-require('./routes/index.js')(app);
